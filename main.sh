@@ -415,8 +415,19 @@ chooseDifficulty(){
 }
 
 stringsort() {
+
+  #update sort command for windows if needed
+  if command -v /usr/bin/sort > /dev/null; then
+    SORT_CMD="/usr/bin/sort"
+  elif command -v sort > /dev/null; then
+    SORT_CMD="sort"
+  else
+    echo "Error: sort command is not available."
+    exit 1
+  fi
+
   input="$1"
-  echo "$input" | grep -o . | sort | tr -d '\n'
+  echo "$input" | grep -o . | "$SORT_CMD" | tr -d '\n'
 }
 
 gameWin(){

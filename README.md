@@ -9,6 +9,13 @@ Welcome to **Hangman**! A simple and engaging game, perfect for testing your wor
 - Perfect for a quick brain exercise or some light entertainment.
 - Make a word recommendation!
 
+## Screenshots
+
+![Menu](screenshots/Screenshot1.png)
+![Username Entry](screenshots/Screenshot2.png)
+![Difficulty Selection](screenshots/Screenshot3.png)
+![Game Loop](screenshots/Screenshot4.png)
+
 ## How to Play
 
 1. Run the game using the bash command below:
